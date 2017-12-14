@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register for my cool website, peeps!</title>
+    <style>
+    .form-input { padding:10px; }
+    label { font-weight:bold; }
+    </style>
+  </head>
+  <body>
+    <h1>Register for my cool website, peeps!</h1>
+    <form action="registered.html" method="post">
+      <div class="form-input" required>
+        <label for="name">Name:</label>
+        <input type="text" name="name" maxlength=10 required placeholder="Your name" />
+      </div>
+
+      <div class="form-input">
+        <label for="email" required>Email: </label>
+        <input type="email" name="email" required placeholder="your@email.com" />
+      </div>
+
+      <div class="form-input" required>
+        <label for="date">Birthdate: </label>
+        <input type="date" name="date" max="2016-12-15" />
+      </div>
+
+      <div class="form-input">
+        <label for="bio">Biography</label><br />
+        <textarea name="bio" placeholder="Tell me a little about yourself" /></textarea>
+      </div>
+
+      <div class="form-input">
+        <label for="animal">What animal do you most relate to</label>
+        <select name="animal">
+          <option name="Mountain Chicken">Mountain Chicken</option>
+          <option name="Spider Monkey" selected>Spider Monkey</option>
+          <option name="Dik-dik">Dik-dik
+          <option name="Agra cadabra">Agra cadabra</option>
+          <option name="Sparklemuffin">Sparklemuffin</option>
+          <option name="Sarcastic fringehead">Sarcastic fringehead</option>
+        </select>
+      </div>
+
+      <div class="form-input">
+        Will you accept our spam mail?
+        <label><input type="radio" value="no" /> Heck no!</label>
+        <label><input type="radio" value="some" /> A little maybe</label>
+        <label><input type="radio" value="yes" /> Fill my inbox, man!</label>
+      </div>
+
+      <div class="form-input">
+        <label><input type="checkbox" name="terms" selected> By signing up on this site I pledge to sell my soul to Web Spider Monkey at the bargain price of 1 Dogecoin.</label>
+      </div>
+
+      <div class="form-input">
+        <button type="submit">Sign me up, already!</button>
+      </div>
+
+    </form>
+  </body>
+</html>
