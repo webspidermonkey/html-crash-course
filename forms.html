@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complaint form</title>
+  </head>
+  <body>
+
+    <form action="form_result.html" method="post">
+      <div class="form-input">
+        <label for="name">Name:</label>
+        <input type="text" name="name" maxlength=10 required placeholder="Your name" />
+      </div>
+
+      <div class="form-input">
+        <label for="email">Email: </label>
+        <input type="email" name="email" required placeholder="your@email.com" />
+      </div>
+
+      <div class="form-input">
+        <label for="date">Date: </label>
+        <input type="date" name="date" value="2017-12-15" />
+      </div>
+
+      <div class="form-input">
+        <label for="numberComplaints">Number of times you've complained about this: </label>
+        <input type="number" name="numberComplaints" max="100" />
+      </div>
+
+      <div class="form-input">
+        <label for="complaintType">What do you want to complain about?</label>
+        <select name="complaintType">
+          <option value="1">Lame tutorials</option>
+          <option value="2" selected>Poor video quality</option>
+          <option value="3">Your attitude</option>
+          <option value="4">Your face</option>
+          <option value="5">Other</option>
+        </select>
+      </div>
+
+      <div class="form-input">
+        Level of dissatisfaction
+        <label><input type="radio" name="severity" value="1" /> It's nothing</label>
+        <label><input type="radio" name="severity" value="2" /> Dissatisfied</label>
+        <label><input type="radio" name="severity" value="3" /> Very distraught</label>
+      </div>
+
+      <div class="form-input">
+        <label for="comment">Complaint:</label>
+        <br />
+        <textarea name="comment" required placeholder="Type your complaint here"></textarea>
+      </div>
+
+      <div class="form-input">
+        <label><input type="checkbox" name="automatedResponse" checked />Click here if you’d like to receive an automated response to help you feel better</label>
+      </div>
+
+      <div class="form-input">
+        <input type="file" name="attachment" multiple accept="image/jpeg,image/x-png" />
+      </div>
+
+      <div class="form-input">
+        <button type="submit">Send your complaint!</button>
+      </div>
+    </form>
+
+  </body>
+</html>
